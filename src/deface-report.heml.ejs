@@ -1,0 +1,36 @@
+<heml>
+  <%- include('partial/header.heml') %>
+  <body>
+    <div class="container-fluid">
+      <%- include('partial/email-title.heml') %>
+
+      <div class="email-body">
+        <div class="body-header">
+          <p class="welcome-user text-center">Hi <b>Ankur,</b></p>
+          <h1 class="text-center">SOMETHING HAS CHANGED</h1>
+        </div>
+
+        <div class="email-message email-style">
+          <p class="grey-font">
+            Your site {{.Body.Site}} has been changed by {{.Body.PercentageChange}}%.
+          </p>
+          <table class="error-table">
+            <tr>
+              <td class='table-cell'>
+              IMG 1
+              </td>
+              <td class='table-cell'>
+                IMG 2
+              </td>
+            </tr>
+          </table>
+          <p class="grey-font">
+            If you are aware of this change please confirm the changes from your Site Hawk account.
+          </p>
+        </div>
+      </div>
+
+      <%- include('partial/email-footer.heml') %>
+    </div>
+  </body>
+</heml>

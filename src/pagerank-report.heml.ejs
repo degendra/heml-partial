@@ -1,0 +1,32 @@
+<heml>
+  <%- include('partial/header.heml') %>
+  <body>
+    <div class="container-fluid">
+      <%- include('partial/email-title.heml') %>
+
+      <div class="email-body">
+        <div class="body-header">
+          <p class="welcome-user text-center">Hi <b>Ankur,</b></p>
+          <h1 class="text-center">VIEW YOUR WEBSITE RANK</h1>
+
+          <div class="blue-background"><img class="alarm-icon" src="https://storage.googleapis.com/site-granny/images/ranking-cup.png"/></div>
+
+        </div>
+        <div class="email-message email-style grey-font">
+          <p>
+            Page rank report for website: {{ .Body.Site }}
+          </p>
+          <p>
+            Keyword: KEYWORD
+          </p>
+          <p>
+            Position: POSITION
+          </p>
+        </div>
+        <button><span class="setup-btn"><b>MORE DETAILS</b></span></button>
+      </div>
+
+      <%- include('partial/email-footer.heml') %>
+    </div>
+  </body>
+</heml>

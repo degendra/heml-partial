@@ -1,0 +1,22 @@
+<heml>
+  <%- include('partial/header.heml') %>
+  <body>
+    <div class="container-fluid">
+      <%- include('partial/email-title.heml') %>
+
+      <div class="email-body">
+        <div class="body-header">
+          <p class="welcome-user text-center">Hi <b>Ankur,</b></p>
+          <h1 class="text-center">JUST A FRIENDLY REMINDER TO VERIFY YOUR EMAIL ADDRESS</h1>
+          <div class="blue-background"><img class="alarm-icon" src="https://storage.googleapis.com/site-granny/images/alarm-clock.png"/></div>
+        </div>
+        <p class="email-message email-style grey-font text-center">
+          For security reasons, please help us by verifying your email address. Verify within 28 days of first signing up to avoid the deactivation of your account.
+        </p>
+        <button><span class="setup-btn"><b>VERIFY EMAIL ADDRESS</b></span></button>
+      </div>
+
+      <%- include('partial/email-footer.heml') %>
+    </div>
+  </body>
+</heml>

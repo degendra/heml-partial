@@ -1,0 +1,24 @@
+<heml>
+  <%- include('partial/header.heml') %>
+  <body>
+    <div class="container-fluid">
+      <%- include('partial/email-title.heml') %>
+
+      <div class="email-body">
+        <div class="body-header">
+          <p class="welcome-user text-center">Hi <b>Ankur,</b></p>
+          <h1 class="text-center">YOU HAVE AN INVITATION</h1>
+
+          <div class="blue-background"><img class="alarm-icon" src="https://storage.googleapis.com/site-granny/images/invitation.png"/></div>
+
+        </div>
+        <p class="email-message email-style text-center grey-font">
+          You have been invited as a member to SOMETHING TEAM by SOMEONE.
+        </p>
+        <button><span class="setup-btn"><b>JOIN TEAM</b></span></button>
+      </div>
+
+      <%- include('partial/email-footer.heml') %>
+    </div>
+  </body>
+</heml>

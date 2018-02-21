@@ -1,0 +1,43 @@
+<heml>
+  <%- include('partial/header.heml') %>
+  <body>
+    <div class="container-fluid">
+      <%- include('partial/email-title.heml') %>
+
+      <div class="email-body">
+        <div class="body-header">
+          <p class="welcome-user text-center">Hi <b>Ankur,</b></p>
+          <h1 class="text-center">THANK YOU FOR BEING PART OF SITE HAWK FAMILY</h1>
+
+          <div class="blue-background"><img class="alarm-icon" src="https://storage.googleapis.com/site-granny/images/calendar-with-a-clock-time-tools.png"/></div>
+
+        </div>
+        <div class="email-message email-style">
+          <p class="grey-font text-justify">
+            Your subscription for {{.Body.Site}} will expire in 3 days, and we will not be able to monitor your site from 3rd party malicious attack. To continue keeping your site safe and performing at its best, go ahead and choose one of our service plan.
+          </p>
+          <p class="grey-font text-justify">
+            After you renew your account you will have continued access to wide range of our services according to your plan.
+          </p>
+
+          <ol>
+            <li>Uptime Monitoring</li>
+            <li>Site Performance</li>
+            <li>Deface Detection</li>
+            <li>Error Detection</li>
+            <li>Page Rank</li>
+          </ol>
+
+          <p class="grey-font text-justify">
+            Use these services to make sure your customer will have uninterrupted access to your site. If your customers cannot reach your site or
+            be greeted with a defaced site, they may lose trust in your product. We don’t want to see that happening. So go ahead and renew your account today.
+          </p>
+
+        </div>
+        <button><span class="setup-btn"><b>RENEW</b></span></button>
+      </div>
+
+      <%- include('partial/email-footer.heml') %>
+    </div>
+  </body>
+</heml>

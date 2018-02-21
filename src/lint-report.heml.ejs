@@ -1,0 +1,70 @@
+<heml>
+  <%- include('partial/header.heml') %>
+  <body>
+    <div class="container-fluid">
+      <%- include('partial/email-title.heml') %>
+
+      <div class="email-body">
+        <div class="body-header">
+          <p class="welcome-user text-center">Hi <b>Ankur,</b></p>
+          <h1 class="text-center">HEY THERE! WE HAVE SOME INFORMATION ABOUT YOUR WEBSITE</h1>
+          <div class="blue-background"><img class="alarm-icon" src="https://storage.googleapis.com/site-granny/images/financial.png"/></div>
+        </div>
+
+        <div class="email-message email-style">
+          <p class="grey-font">
+            Statistic about site: {{ .Body.Site }}
+          </p>
+
+          <div>
+            <p class="grey-font">
+              CSSLINT: {{ .Body.Csslint.TotalFiles }} files have errors.
+            </p>
+
+            <ol class="ol-style">
+              {{ range $key, $value := .Body.Csslint.Files }}
+              <li class="grey-font">{{ $value.FileName }}: {{ $value.TotalErrors }} errors
+                <ol>
+                  {{ range $k, $v := $value.Errors }}
+                  <li class="grey-font">
+                    Line: {{ $v.LineNumber }} Column: {{ $v.ColumnNumber }} Type: {{ $v.Type }} Description: {{ $v.Description }}
+                  </li>
+                </ol>
+              </li>
+            </ol>
+
+            <p class="grey-font">
+              Click <a href="">here</a> to see detail CSSLINT report.
+            </p>
+          </div>
+
+          <div>
+            <p class="grey-font">
+              JSHINT: {{ .Body.Jshint.TotalFiles }} files have errors.
+            </p>
+
+            <ol class="ol-style">
+              {{ range $key, $value := .Body.Jshint.Files }}
+              <li class="grey-font">{{ $value.FileName }}: {{ $value.TotalErrors }} errors
+                <ol>
+                  {{ range $k, $v := $value.Errors }}
+                  <li class="grey-font">
+                    Line: {{ $v.LineNumber }} Column: {{ $v.ColumnNumber }} Description: {{ $v.Description }}
+                  </li>
+                </ol>
+              </li>
+            </ol>
+
+            <p class="grey-font">
+              Click <a href="">here</a> to see detail JSHINT report.
+            </p>
+          </div>
+
+        </div>
+        <!-- <button><span class="setup-btn"><b>VIEW DETAIL REPORT</b></span></button> -->
+      </div>
+
+      <%- include('partial/email-footer.heml') %>
+    </div>
+  </body>
+</heml>

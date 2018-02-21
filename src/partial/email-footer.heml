@@ -1,0 +1,23 @@
+<div class="email-footer">
+      <p class="text-center copyright-height light-grey-font">
+        Copyright &copy; 2017 Site Hawk. All Rights Reserved. We appreciate you!
+      </p>
+      <p class="text-center copyright-height">
+        <b><a class="black-font" href="mailto:info@sitehawk.io" target="_blank">info@sitehawk.io</a> | <a class="black-font" href="tel:%28%2B977%29%2001-4441746" value="+97714441746" target="_blank">(+977) 01-4441746</a> | <a class="black-font" href="{{.Body.UnsubscribeLink}}">Unsubsrcibe</b>
+      </p>
+      <div class="social-icons">
+        <table class="text-center">
+          <tr>
+            <td class="icon-spacing">
+              <a target="_blank" href="https://www.facebook.com/sitehawk.io/"><img src="https://storage.googleapis.com/site-granny/images/facebook-logo.png" height="20px" width="20px"/></a>
+            </td>
+            <td class="icon-spacing">
+              <a target="_blank" href="https://twitter.com/sitehawk_io"><img src="https://storage.googleapis.com/site-granny/images/twitter.png" height="20px" width="20px" /></a>
+             </td>
+            <td class="icon-spacing">
+              <a target="_blank" href="https://www.linkedin.com/company/13258250/"><img src="https://storage.googleapis.com/site-granny/images/linkedin.png" height="20px" width="20px" /></a>
+             </td>
+          </tr>
+        </table>
+      </div>
+    </div>

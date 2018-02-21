@@ -1,0 +1,33 @@
+<heml>
+  <%- include('partial/header.heml') %>
+  <body>
+    <div class="container-fluid">
+      <%- include('partial/email-title.heml') %>
+
+      <div class="email-body">
+        <div class="body-header">
+          <p class="welcome-user text-center">Hi <b>Ankur,</b></p>
+          <h1 class="text-center">TRY OUR NEW FEATURE</h1>
+
+          <div class="blue-background"><img class="alarm-icon" src="https://storage.googleapis.com/site-granny/images/clipboards.png"/></div>
+
+        </div>
+        <p class="email-message confirm-style text-center grey-font">
+          <!-- We are happy to announce a new feature for testing how good your website's position is in the search engines. -->
+          Exciting news here in Site Hawk. We were working on a feature which is able to find your website's rank in search engines.
+          This feature has finally been released and we would like you to be one of the first people gettting to use these feature.
+
+          This tool periodically scrapes search engines against keywords that you provided and finds the rank of your website
+          usigng these keywords. The report generated can help you better your website's popularity in the search engines.
+
+          Get started with this new feature and make your website a bit better
+          
+
+        </p>
+        <button><span class="setup-btn"><b>MORE DETAILS</b></span></button>
+      </div>
+
+      <%- include('partial/email-footer.heml') %>
+    </div>
+  </body>
+</heml>

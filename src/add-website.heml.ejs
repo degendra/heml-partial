@@ -1,0 +1,26 @@
+<heml>
+  <%- include('partial/header.heml') %>
+  <body>
+    <div class="container-fluid">
+      <%- include('partial/email-title.heml') %>
+
+      <div class="email-body">
+        <div class="">
+          <p class="welcome-user text-center">Hi <b>Ankur,</b></p>
+          <h1 class="text-center">ALMOST THERE</h1>
+
+          <div class='globe-svg'>
+            <img class="add-website-icon" src="https://storage.googleapis.com/site-granny/images/add-website-icon.png" />
+          </div>
+
+        </div>
+        <p class="email-message confirm-style grey-font">
+          We have found that you have not entered any website to monitor. You can visit our website or simply click the button to visit a page to add your website.
+        </p>
+        <button><span class="setup-btn"><b>FINISH YOUR SETUP</b></span></button>
+      </div>
+
+      <%- include('partial/email-footer.heml') %>
+    </div>
+  </body>
+</heml>
