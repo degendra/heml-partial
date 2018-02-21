@@ -1,0 +1,40 @@
+<heml>
+  <%- include('partial/header.heml') %>
+  <body>
+    <div class="container-fluid">
+      <%- include('partial/email-title.heml') %>
+
+      <div class="email-body">
+        <div class="body-header">
+          <p class="welcome-user text-center">Hi <b>Ankur,</b></p>
+          <h1 class="text-center">HEY THERE! WE HAVE SOME INFORMATION ABOUT YOUR WEBSITE</h1>
+          <div class="blue-background"><img class="alarm-icon" src="https://storage.googleapis.com/site-granny/images/speedometer.png"/></div>
+        </div>
+
+        <div class="email-message email-style">
+          <p class="grey-font">
+            We have been monitoring your website 24/7. Following are the performance report:-
+          </p>
+          <p class="grey-font">
+            Site: SOMETHING.COM
+          </p>
+
+          <p class="grey-font">
+            Grade: {{.Body.Grade}}
+          </p>
+
+          <p class="grey-font">
+            Total Score: {{.Body.TotalScore}}/100
+          </p>
+
+          <p class="grey-font">
+            Load Time: {{.Body.LoadTime}} sec
+          </p>
+        </div>
+        <button><span class="setup-btn"><b>MORE DETAILS</b></span></button>
+      </div>
+
+      <%- include('partial/email-footer.heml') %>
+    </div>
+  </body>
+</heml>

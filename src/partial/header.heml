@@ -1,7 +1,35 @@
 <head>
-  <subject>Email Rox!</subject>
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
   <style>
-    body { background: SkyBlue; }
-    h1 { color: DarkViolet; }
+      body { font-family: 'Roboto', sans-serif; }
+      .container-fluid {margin: 0 auto; width: 600px; padding: 0; padding-bottom: 20px; background: #eeeeee; border:0px solid #1AB394;}
+      .body-header {padding: 0 90px;}
+      h2 { font-size: 18px; margin: 5px 0;}
+      h1 { font-size: 24px; margin: 15px 0;line-height: 30px;}
+      .blue-background { background: #81D4FA; min-height: 120px;}
+      .alarm-icon { margin: auto; padding-top: 30px; height: 60px; width: 60px;}
+      .email-title { padding: 25px 0;text-align: center;}
+      .welcome-user { font-weight: 400; font-size: 18px;}
+      .hawk-logo { height: 46px; width: 97px; margin: 0 auto;}
+      .add-website-icon { margin: 0 auto; padding-left: 15px; height: 135px}
+      .website {font-weight: 700; font-size: 14px; color: #1de9b6;}
+      .email-body { padding: 10px 0 50px; background: #ffffff; width: 95%; margin: 0 auto;}
+      .email-message { font-size: 14px; margin: 0;}
+      .confirm-style { padding: 30px; text-align: justify;}
+      .email-style { padding: 30px 90px;}
+      .text-center { text-align: center;}
+      .text-justify {text-align: justify;}
+      .error-table { width: 100%}
+      .table-cell { width: 50%}
+      .setup-btn {padding: 10px 15px; color: #ffffff; background: #1de9b6; font-size: 14px}
+      .email-footer { padding-top: 20px;}
+      .social-icons { padding-top: 20px}
+      .icon-spacing { padding: 0 20px;}
+      .copyright-height { line-height: 5px; font-size: 12px;}
+      .light-grey-font { color: #9e9e9e; font-size: 14px;}
+      .grey-font { color: #7d7c7c; font-size: 14px;}
+      .ol-style {padding: 0;}
+      button {background: transparent;}
+      .black-font {color: #000;}
   </style>
 </head>
